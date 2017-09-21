@@ -1,0 +1,287 @@
+html, body {
+        position: relative;
+        height: 100%;
+        font-family: 'Open Sans', sans-serif;
+}
+body {
+        background: #fff;
+        font-family: Open Sans, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+}
+
+
+
+/* header */
+
+header {
+    background-color: #f77e00;
+    width: 100%;
+    height: 40px;
+    display: block;
+}
+header .icon-social {
+    margin-left: 115px;
+    margin-top: 8px;
+    float: left;
+    display: inline-block;
+}
+header .icon-social span {
+    font-size: 12px;
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    font-weight: bold;
+}
+header .icon-social .icon {
+    width: 26px;
+    height: auto;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+header .icon-social .icon img {
+    width: 100%;
+}
+header .login-language-bar {
+    margin-right: 115px;
+    margin-top: 8px;
+    float: right;
+    display: inline-block;
+}
+header .login-language-bar a {
+    font-size: 12px;
+    display: inline-block;
+    padding-right: 3px;
+    text-decoration: none;
+}
+header .login-language-bar a i {
+    color:#fff;
+}
+header .login-language-bar a span {
+    color: #fff;
+}
+header .login-language-bar .language-bar {
+    display: inline-block;
+    margin-right: 3px;
+    vertical-align: middle;
+    
+}
+header .login-language-bar .language-bar span {
+    font-size: 12px;
+    color: #fff;
+    border-left: 1px solid #fff;
+    padding-left: 5px;
+}
+header .login-language-bar .language-bar .icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 3px;
+    height: auto;
+    width: 24px;
+}
+header .login-language-bar .language-bar .icon img {
+    width: 100%;
+}
+
+/* logo */
+.logo {
+    margin: auto;
+    display: block;
+    width: 718px;
+    height: auto;
+}
+.logo img {
+    width: 100%;
+}
+
+/* Menu */
+.menu {
+    margin-top:5px;
+    text-align: center;
+    box-shadow: 0px 5px 5px #888888; 
+    margin-bottom: 9px;
+}
+.menu ul{
+    font-size: 15px;
+    text-transform: uppercase;
+    display: block;
+    height: 32px;
+    margin: 0;
+    
+}
+.menu ul li {
+    display: inline-block;
+    vertical-align: middle;
+    margin:0 5px;
+    position: relative;
+}
+.menu ul li.selected-first {
+    color: #000fff;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: #f77e00;
+}
+.menu ul li.selected a {
+    color: #000fff;
+}
+
+.menu ul li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #000fff;
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    transition: all .2s ease;
+}
+.menu ul li.selected a::after {
+    width: 100%;    
+    color: #000fff;
+}
+.menu ul li a:hover {
+    color: #000fff;
+}
+.menu ul li a:hover:after {
+    width: 100%;
+}
+
+
+/* Slider */
+.slider {
+}
+.slider .swiper-container {
+    width: 100%;
+    height: 550px;
+}
+.slider .swiper-container .swiper-wrapper .swiper-slide {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.slider .swiper-container .swiper-pagination .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+}
+
+/*Information*/
+.information {
+    background-color: #efefef;
+    padding: 0px 100px;
+}
+.information .information-paragraph {
+    width: 613px;
+    display: inline-block;
+    vertical-align: middle;
+    background: #fff;
+    padding: 0 45px;
+    height: 585px;
+}
+.information .information-paragraph h2 {
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: 800;
+    color: #0047a2;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+.information .information-paragraph h1 {
+    font-size: 20px;
+    font-weight: 800;
+    color: #f77e00;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.information .information-paragraph p {
+    font-size: 12px;
+    font-weight: 300;
+    margin: 5px 0;
+}
+
+.information .information-box {
+    width: 586px;
+    display: inline-block;
+    vertical-align: middle;
+    height: auto;
+}
+.information .information-box .events-and-testimonial {
+    width: 586px;
+    display: block;
+}
+.information .information-box .events-and-testimonial .events {
+    width: 293px;
+    height: 293px;
+    float: left;
+    vertical-align: middle;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.information .information-box .events-and-testimonial .events h3{
+    text-align: center;
+    color: #000;
+    margin-top: 40%;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.information .information-box .events-and-testimonial .events span {
+    margin: 0px 88px;
+    border-radius: 20px;
+    border: 1px solid #000;
+    padding: 5px 10px;
+    font-size: 15px;
+    color: #000;
+    background-color: transparent;
+}
+.information .information-box .events-and-testimonial .testimonial {
+    width: 293px;
+    height: 293px;
+    float: right;
+    vertical-align: middle;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.information .information-box .events-and-testimonial .testimonial::before {
+    content: '';
+    background-color: #f77e00;
+    opacity: 0.5;
+    width: 293px;
+    height: 293px;
+    display: block;
+    position: absolute;
+}
+.information .information-box .events-and-testimonial .testimonial .icon{
+    width: 145px;
+    height: auto;
+}
+.information .information-box .events-and-testimonial .testimonial .icon img{
+    width: 100%;
+}
+.information .information-box .achievements-and-announcement {
+    width: 100%;
+}
+.information .information-box .achievements-and-announcement .achievements {
+    width: 293px;
+    height: 293px;
+    float: left;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.information .information-box .achievements-and-announcement .announcement {
+    width: 293px;
+    height: 293px;
+    float: right;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
